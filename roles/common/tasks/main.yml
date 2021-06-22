@@ -1,4 +1,5 @@
 ---
 # tasks file for common
-- name: install epel
-  yum: name=epel-release state=installed
+# - name: install epel
+# yum: name=epel-release state=installed
+# no use for ubuntu
