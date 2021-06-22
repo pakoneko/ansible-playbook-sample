@@ -1,7 +1,7 @@
 ---
 # tasks file for serverspec
 - name: install ruby
-  yum: name=ruby state=installed
+  apt: name=ruby state=present
 
 - name: install serverspec
   gem: name={{ item }} state=present user_install=no 
