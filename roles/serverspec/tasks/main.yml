@@ -2,9 +2,9 @@
 # tasks file for serverspec
 - name: install ruby
   apt: name=ruby state=present
-
+# to install community ,run: ansible-galaxy collection install community.general
 - name: install serverspec
-  gem: name={{ item }} state=present user_install=no 
+  community.general.gem: name={{ item }} state=present user_install=no 
   with_items:
    - rake
    - serverspec
